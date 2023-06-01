@@ -26,7 +26,7 @@ const getMultiplicarNumeros = () => {
 
 const getDividirNumeros = () => {
   const { campoA, campoB } = calcular;
-  return Number(campoA) / Number(campoB);
+  return Number(campoA) / Number(campoB)
 }
 
 const getFiltrarCalculos = () => {
@@ -41,7 +41,7 @@ switch (calcularTotal) {
   case 'multiplicar':
     return getMultiplicarNumeros();
   case 'dividir':
-    return getDividirNumeros();
+    return getDividirNumeros().toFixed(2)
   }
 }
 </script>
